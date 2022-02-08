@@ -9,20 +9,18 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png">
     <title><?php echo $title?></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="styles.css" rel="stylesheet" >
+
 </head>
 
 <body>
 
-   <p><?php echo $title?></p>
    <p><?php  require_once APP_ROOT . '/app/views/structure/header.php';?></p>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <?php echo $content?>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
