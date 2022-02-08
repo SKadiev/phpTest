@@ -1,4 +1,5 @@
 <?php
 
 $router->get('/', 'HomeController/index');
-$router->get('/student', 'StudentController/index');
+$router->get('/login', 'LoginController/index');
+$router->get('/register', 'RegisterController/index');
