@@ -1,6 +1,6 @@
 <?php 
  $title = 'Register';
- $content = '<form action="/register" method="post" class="registerform">
+ $content = '<form action="register" method="post" class="registerform">
  <div class=whitetop>
     <h3> Register information</h3>
  </div>
