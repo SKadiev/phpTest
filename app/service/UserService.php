@@ -23,16 +23,11 @@ class UserService {
 
             $user = new User('name','email','password', $this->pdo);
             $user->insert($formData);
-            http_response_code(400);
-            return $this->formater->format($user);
+            return true;
 
-        };
-
-        http_response_code(400);
-        exit;
-
-
-
+        } 
+        
+        return false;
 
     }
 

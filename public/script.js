@@ -23,10 +23,10 @@ $(function() {
             data: $('#register-form').serializeArray(), // serializes the form's elements.
             success: function(data)
             {
-              console.log(data); // show response from the php script.
+                window.location.href = data;
+                
             }
         });
-        alert( "Handler for .click() called." );
       });
    
 });

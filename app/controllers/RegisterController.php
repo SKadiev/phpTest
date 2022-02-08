@@ -11,11 +11,26 @@ class RegisterController {
         
     }
    
+    public function register() {
+       $isPassed = $this->userService->registerUser($_POST);
+       if ($isPassed) {
+           return ['data', $isPassed];
+            die('/index');
+       } else {
+            die('/fail');
+       }
+
+    }
+
+
     public function index() {
-       return $this->userService->registerUser($_POST);
         require_once APP_ROOT . '/app/views/register/index.php';
 
     }
+    public function fail() {
+         require_once APP_ROOT . '/app/views/register/fail.php';
+ 
+     }
 
     
    

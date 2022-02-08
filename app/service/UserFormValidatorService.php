@@ -38,5 +38,9 @@ class UserFormValidatorService implements Validator {
 
 
     }
+
+    public function getError() {
+        return $this->error;
+    }
   
 }
