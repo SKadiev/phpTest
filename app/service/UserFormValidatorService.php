@@ -15,7 +15,7 @@ class UserFormValidatorService implements Validator {
 
     public function validate($data):bool {
 
-        $username = $data['username'];
+        $username = $data['name'];
         $email = $data['email'];
         $password = $data['password'];
 

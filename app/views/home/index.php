@@ -50,7 +50,7 @@
                          <form id="register-form"
                           method="post" role="form" style="display: none;">
                              <div class="form-group">
-                                 <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                 <input type="text" name="name" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                              </div>
                              <div class="form-group">
                                  <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">

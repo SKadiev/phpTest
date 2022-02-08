@@ -22,7 +22,7 @@ class UserService {
         if ($this->validator->validate($formData)) {
 
             $user = new User('name','email','password', $this->pdo);
-            $user->insert();
+            $user->insert($formData);
             http_response_code(400);
             return $this->formater->format($user);
 

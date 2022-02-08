@@ -21,10 +21,16 @@ class User
    }
 
    public function insert($data) {
-   
-    $statement = $this->pdo->insert("user", $data); 
+    foreach (array_keys($data) as $value) {
+    
+        if (!in_array($value,$this->filable)) {
+            unset($data[$value]);
+        }
+    }
+  
+    $statement = $this->pdo->insert("users", $data); 
  
-    return $statement->fetch();
+    return $statement;
 
    }
 }
